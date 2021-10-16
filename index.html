@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Байкальский отдых</title>
 </head>
 <body>
     <!--Хедер-->
-    <header>
+    <header class="header">
         <a href=""><img src="./images/Group 28.svg">Байкальский отдых Турагенство</a>
         <ul>
             <li><a href="tel:89243541540">8-924-3-541-540</a></li>
@@ -28,87 +36,91 @@
     </header>
     <!--Центральный текст-->
     <main>
-        <section>
-            <h1>Путешествия по Байкалу</h1>
-            <p>Туры по самому красивому месту России.Поехали с нами за новыми впечатлениями!</p>
+        <section >
+            <h1 >Путешествия по Байкалу</h1>
+            <p >Туры по самому красивому месту России.Поехали с нами за новыми впечатлениями!</p>
+            <a href="">Подобрать тур</a>
+            <!--Стрелка вниз/Якорная ссылка-->
+            <a href="">↓</a>
         </section>
-        <a href="">Подобрать тур</a>
-        <!--Стрелка вниз/Якорная ссылка-->
-        <a href="">↓</a>
         <!--Картинки туров-->
-        <section>
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="./images/tour1.jpg" alt="Турбазы на Байкале" width="256"><p>Турбазы на Байкале</p></a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour2.jpg" alt="Экскурсии и туры" width="256">
-                        <p>Экскурсии и туры</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour3.jpg" alt="Охота и рыбалка" width="256">
-                        <p>Охота и рыбалка</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour4.jpg" alt="Экстрим туры" width="256">
-                        <p>Экстрим туры</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour5.jpg" alt="Теплоходы, яхты" width="256">
-                        <p>Теплоходы, яхты</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour6.jpg" alt="Красоты Байкала" width="256">
-                        <p>Красоты Байкала</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour7.jpg" alt="Гостиницы в Улан-Удэ" width="256">
-                        <p>Гостиницы в Улан-Удэ</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour8.jpg" alt="Транспорт" width="256">
-                        <p>Транспорт</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour9.jpg" alt="Деловой туризм" width="256">
-                        <p>Деловой туризм</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour10.jpg" alt="Фото тура на байкале" width="256">
-                        <p>Круизы по Байкалу</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour11.jpg" alt="Фото тура на байкале" width="256">
-                        <p>Зимние туры</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/tour12.jpg" alt="Фото тура на байкале" width="256">
-                        <p>Карта Байкала</p>
-                    </a>
-                </li>
-            </ul>
+        <section class="categories">
+            <div class="container">
+                <h2 class="visually-hidden">Категории туров</h2>
+                <ul class="categories-list">
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour1.jpg" alt="Турбазы на Байкале" width="256">
+                            <p class="categories-subtitle">Турбазы на Байкале</p></a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour2.jpg" alt="Экскурсии и туры" width="256">
+                            <p class="categories-subtitle">Экскурсии и туры</p>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour3.jpg" alt="Охота и рыбалка" width="256">
+                            <p class="categories-subtitle">Охота и рыбалка</p>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour4.jpg" alt="Экстрим туры" width="256">
+                            <p class="categories-subtitle">Экстрим туры</p>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour5.jpg" alt="Теплоходы, яхты" width="256">
+                            <p class="categories-subtitle">Теплоходы, яхты</p>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour6.jpg" alt="Красоты Байкала" width="256">
+                            <p class="categories-subtitle">Красоты Байкала</p>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour7.jpg" alt="Гостиницы в Улан-Удэ" width="256">
+                            <p class="categories-subtitle">Гостиницы в Улан-Удэ</p>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour8.jpg" alt="Транспорт" width="256">
+                            <p class="categories-subtitle">Транспорт</p>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour9.jpg" alt="Деловой туризм" width="256">
+                            <p class="categories-subtitle">Деловой туризм</p>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour10.jpg" alt="Фото тура на байкале" width="256">
+                            <p class="categories-subtitle">Круизы по Байкалу</p>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour11.jpg" alt="Фото тура на байкале" width="256">
+                            <p class="categories-subtitle">Зимние туры</p>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/tour12.jpg" alt="Фото тура на байкале" width="256">
+                            <p class="categories-subtitle">Карта Байкала</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!--Там где зеленый фон и будут свг линки-->
         <section>
