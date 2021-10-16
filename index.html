@@ -256,37 +256,41 @@
             <button type="button">Читать подробней</button>
         </section>
         <!--Фотогалерея-->
-        <section>
-            <h2>Фотогалерея</h2>
-            <a href="">Перейти в раздел</a>
-            <ul>
-                <li>
-                    <button type="button">←</button>
-                </li>
-                <li>
-                    <button type="button">→</button>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="images/Gallery/gallery1.jpg" alt="Фото галлерея 1" width="352" height="256"> 
-                </li>
-                <li>
-                    <img src="images/Gallery/gallery2.jpg" alt="Фото галлерея 1" width="352" height="256">
-                </li>
-                <li>
-                    <img src="images/Gallery/gallery3.jpg" alt="Фото галлерея 1" width="352" height="256">
-                </li>
-                <li>
-                    <img src="images/Gallery/gallery4.jpg" alt="Фото галлерея 1" width="352" height="256">
-                </li>
-                <li>
-                    <img src="images/Gallery/gallery5.jpg" alt="Фото галлерея 1" width="352" height="256">
-                </li>
-                <li>
-                    <img src="images/Gallery/gallery6.jpg" alt="Фото галлерея 1" width="352" height="256">
-                </li>
-            </ul>
+        <section class="photogallery">
+            <div class="container">
+                <div class="photogallery-container">
+                    <h2 class="photogallery-title">Фотогалерея</h2>
+                    <a class="photogallery-link"href="">Перейти в раздел</a>
+                    <ul class="photogallery-btn-list">
+                        <li>
+                            <button class="photogallery-btn" type="button">←</button>
+                        </li>
+                        <li>
+                            <button class="photogallery-btn" type="button">→</button>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="photogallery-container-list">
+                    <li>
+                        <img class="photogallery-container-list-item" src="images/Gallery/gallery1.jpg" alt="Фото галлерея 1" width="352" height="256"> 
+                    </li>
+                    <li>
+                        <img class="photogallery-container-list-item" src="images/Gallery/gallery2.jpg" alt="Фото галлерея 1" width="352" height="256">
+                    </li>
+                    <li>
+                        <img class="photogallery-container-list-item" src="images/Gallery/gallery3.jpg" alt="Фото галлерея 1" width="352" height="256">
+                    </li>
+                    <li>
+                        <img class="photogallery-container-list-item" src="images/Gallery/gallery4.jpg" alt="Фото галлерея 1" width="352" height="256">
+                    </li>
+                    <li>
+                        <img class="photogallery-container-list-item" src="images/Gallery/gallery5.jpg" alt="Фото галлерея 1" width="352" height="256">
+                    </li>
+                    <li>
+                        <img class="photogallery-container-list-item" src="images/Gallery/gallery6.jpg" alt="Фото галлерея 1" width="352" height="256">
+                    </li>
+                </ul>
+            </div>
         </section>
         <!--Байкальский отдых с нами – это легко!-->
         <section>
@@ -348,5 +352,103 @@
             </ul>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container-up">
+                <div>
+                    <h3 class="footer-title">Бронирование</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Отели и базы отдыха</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Теплоходы и катера</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Транспортные услуги</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Экскурсии</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Экскурсии и туры</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Экстрим туры</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Туры на Байкал</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Туры Зима-Весна</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Туры Лето-Осень</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Туры охоты и рыбалки</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">О Байкале</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Карта Байкала</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Достопримечательности</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Полезная информация</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">О нас</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Контакты</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="">Агенствам</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-container-down">
+                <div class="footer-list-cont-down">
+                    <p class="footer-title-two">Турагентство «Байкальский отдых»</p>
+                    <small class="footer-text-conf">© 2021. Все права защищены</small>
+                </div>
+                <address class="adress-footer">
+                    <div class="adress-tour">
+                        <p class="footer-title-two">Заказ туров и бронирование:</p>
+                        <ul>
+                            <li class="footer-item">
+                                <a class="footer-text-conf" href="">тел. 8-924-3-541-540</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer-text-conf" href="mailto:">e-mail: baikalholiday@mail.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="adress-adress">
+                        <p class="footer-title-two ">Адрес:</p>
+                        <p class="footer-text-conf">г. Улан-Удэ, ул.Гражданская, 20,
+                        отель «Рестон», 1 этаж</p>
+                    </div>
+                </address>
+                <div class="privacy-list">
+                        <a class="footer-privacy" href="">Политика конфиденциальности</a>
+                    <a  class="footer-text-conf" href="">Дизайн<img src="/images/Vector.svg" alt="Дизайн"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
