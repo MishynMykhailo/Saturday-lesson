@@ -47,6 +47,157 @@ address {
   padding-right: 15px;
   margin: 0 auto;
 }
+/* ----------------------header----------------------------------------------- */
+.header {
+  position: absolute;
+  width: 100%;
+}
+.header-position {
+  display: flex;
+  padding-top: 13px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 14px;
+}
+.header-logo {
+  margin-right: 20px;
+}
+.header-logo-title {
+  font-family: "PT Serif", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 1px;
+}
+.header-logo-text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.header-contacts-list {
+  margin-left: auto;
+  display: flex;
+}
+.header-contacts-item a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-contacts-item:not(:last-child) {
+  margin-right: 69px;
+}
+.header-button {
+  margin-left: 45px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  padding: 13px 30px 13px 30px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+}
+.header-main-item a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.header-menu-list {
+  display: flex;
+}
+.header-nav {
+  padding-top: 20px;
+}
+.header-main-item:not(:last-child) {
+  margin-right: 32px;
+}
+.header-icon {
+  margin-right: 12px;
+}
+/* --------------HERO------------------------ */
+.hero {
+  background-image: url(../images/hero-sect.jpg);
+  padding-top: 226px;
+  padding-bottom: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero::before {
+  position: absolute;
+  content: "";
+  top: 81px;
+  width: 100%;
+  background: #c4c4c4;
+  opacity: 0.3;
+  height: 1px;
+  display: block;
+}
+.hero-title {
+  font-family: "PT Serif", sans-serif;
+
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.hero-text {
+  font-size: 20px;
+  line-height: 140%;
+  /* or 28px */
+  color: #ffffff;
+  margin-bottom: 94px;
+}
+.hero-button {
+  display: inline-block;
+  color: #ffffff;
+  padding: 20px 53px 20px 53px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  margin-bottom: 184px;
+}
+.hero-button-down {
+  display: flex;
+  border: 1px solid #ffffff;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero-icon-down {
+  width: 13px;
+  height: 18px;
+}
+/* -------------------------primary-activity----------------------- */
+.primary-activity {
+  background-color: rgba(112, 207, 41, 0.07);
+}
+.primary-activity-title {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  /* identical to box height, or 39px */
+
+  text-align: center;
+
+  /* Заголовки */
+
+  color: #000000;
+}
 /*-------------categories-----------------*/
 .categories-list {
   display: flex;
@@ -108,8 +259,15 @@ address {
   border: 1px solid #0061d9;
   border-radius: 50%;
   background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
-
+.photogallery-icon {
+  display: flex;
+  width: 12px;
+  height: 24px;
+}
 .photogallery-btn-list {
   margin-left: 55px;
   display: flex;
@@ -142,7 +300,8 @@ address {
 .contact-footer {
   font-size: 14px;
   line-height: 130%;
-  color: #ffffff;
+
+  display: block;
 }
 .footer-title {
   margin-bottom: 17px;
@@ -152,7 +311,20 @@ address {
   text-transform: uppercase;
   color: #ffffff;
 }
-
+.link-footer-color {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer-privacy {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-logo-right {
+  display: flex;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-logo-right span {
+  margin-right: 14px;
+}
 .footer-list {
   margin-bottom: -10px;
 }
@@ -173,11 +345,16 @@ address {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.footer-gorod {
+  max-width: 219px;
+}
+
 .footer-subtitle {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.3;
   color: #ffffff;
+  margin-bottom: 7px;
 }
 .footer-subtitle:not(:last-child) {
   margin-right: 62px;
